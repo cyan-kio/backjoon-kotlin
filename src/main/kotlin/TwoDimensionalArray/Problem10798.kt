@@ -1,7 +1,5 @@
 package TwoDimensionalArray
 
-import java.util.StringTokenizer
-
 /**
  * Tokenizer, Builder, println
  * A~Z, a~z, 0~9
@@ -15,7 +13,7 @@ import java.util.StringTokenizer
 fun main() = with(System.`in`.bufferedReader()) {
     val array = Array(5) { "" }
     var maxLength = 0
-    var bw = System.out.bufferedWriter()
+    val bw = System.out.bufferedWriter()
     for (i in array.indices) {
         array[i] = readLine()
         if (maxLength < array[i].length) maxLength = array[i].length
